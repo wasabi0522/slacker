@@ -236,7 +236,7 @@ class Chat(BaseAPI):
                      parse=None, link_names=None, attachments=None,
                      unfurl_links=None, unfurl_media=None, icon_url=None,
                      icon_emoji=None):
-       
+
         # Ensure attachments are json encoded
         if attachments:
             if isinstance(attachments, list):
@@ -404,7 +404,7 @@ class Team(BaseAPI):
 class Reactions(BaseAPI):
     def add(self, name, file_=None, file_comment=None, channel=None,
             timestamp=None):
-        # One of file, file_comment, or the combination of channel and timestamp
+        # One of file, file_comment, or the combination of channel and timestamp  # noqa
         # must be specified
         assert (file_ or file_comment) or (channel and timestamp)
 
@@ -439,7 +439,7 @@ class Reactions(BaseAPI):
 
     def remove(self, name, file_=None, file_comment=None, channel=None,
                timestamp=None):
-        # One of file, file_comment, or the combination of channel and timestamp
+        # One of file, file_comment, or the combination of channel and timestamp  # noqa
         # must be specified
         assert (file_ or file_comment) or (channel and timestamp)
 
